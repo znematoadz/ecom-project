@@ -8,7 +8,7 @@
             <g id="Group" transform="translate(90.000000, 38.000000)">
                
                 <polygon id="Triangle" fill-opacity="0.262838724" fill="#0A83A8" points="2 8 40 39 10 39"></polygon>
-                <polygon id="Triangle" fill-opacity="0.262838724" fill="#0A83A8" points="2 8 40 39 10 39 40 8 2"></polygon>
+                <polygon id="Triangle" fill-opacity="0.262838724" fill="#0A83A8" points="2 8 40 39 10 39 40 8"></polygon>
                 
             </g>
         </g>
