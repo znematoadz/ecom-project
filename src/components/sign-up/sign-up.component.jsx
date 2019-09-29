@@ -5,7 +5,11 @@ import CustomButton from "../custom-button/custom-button.component";
 
 import { auth, createUserProfileDocument } from "../../firebase/firebase.utils";
 
-import { SignUpContainer, SignUpTitle } from "./sign-up.styles";
+import {
+  SignUpContainer,
+  SignUpTitle,
+  SignUpButtonContainer
+} from "./sign-up.styles";
 
 class SignUp extends React.Component {
   constructor() {
@@ -98,8 +102,9 @@ class SignUp extends React.Component {
             onChange={this.handleChange}
             required
           />
-
-          <CustomButton type="submit">Sign Up</CustomButton>
+          <SignUpButtonContainer>
+            <CustomButton type="submit">Sign Up</CustomButton>
+          </SignUpButtonContainer>
         </form>
       </SignUpContainer>
     );
