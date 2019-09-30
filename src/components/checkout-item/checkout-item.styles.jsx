@@ -9,6 +9,13 @@ export const CheckoutItemContainer = styled.div`
   font-family: "Open Sans Condensed", sans-serif;
   font-size: 20px;
   align-items: center;
+
+  @media screen and (max-width: 800px) {
+    font-size: 18px;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 export const ImageContainer = styled.div`

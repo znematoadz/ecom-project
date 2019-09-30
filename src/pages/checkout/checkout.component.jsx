@@ -12,7 +12,7 @@ import StripeCheckoutButton from "../../components/stripe-button/stripe-button.c
 import {
   CheckoutPageContainer,
   CheckoutHeaderContainer,
-  HeaderBlockContatiner,
+  HeaderBlockContainer,
   TotalContainer,
   WarningContainer
 } from "./checkout.styles";
@@ -20,21 +20,21 @@ import {
 const CheckoutPage = ({ cartItems, total }) => (
   <CheckoutPageContainer>
     <CheckoutHeaderContainer>
-      <HeaderBlockContatiner>
+      <HeaderBlockContainer>
         <span>Product</span>
-      </HeaderBlockContatiner>
-      <HeaderBlockContatiner>
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Description</span>
-      </HeaderBlockContatiner>
-      <HeaderBlockContatiner>
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Quantity</span>
-      </HeaderBlockContatiner>
-      <HeaderBlockContatiner>
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Price</span>
-      </HeaderBlockContatiner>
-      <HeaderBlockContatiner>
+      </HeaderBlockContainer>
+      <HeaderBlockContainer>
         <span>Remove</span>
-      </HeaderBlockContatiner>
+      </HeaderBlockContainer>
     </CheckoutHeaderContainer>
     {cartItems.map(cartItem => (
       <CheckoutItem key={cartItem.id} cartItem={cartItem} />
