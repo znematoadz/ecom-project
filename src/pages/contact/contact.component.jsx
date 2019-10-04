@@ -21,10 +21,6 @@ class ContactPage extends React.Component {
     };
   }
 
-  handleSubmit = e => {
-    e.preventDefault();
-  };
-
   handleChange = e => {
     const { value, name } = e.target;
     this.setState({
