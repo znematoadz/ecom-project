@@ -21,9 +21,12 @@ class ContactPage extends React.Component {
     };
   }
 
+  handleSubmit = e => {
+    e.preventDefault();
+  };
+
   handleChange = e => {
     const { value, name } = e.target;
-    console.log(value, name);
     this.setState({
       [name]: value
     });
@@ -34,7 +37,11 @@ class ContactPage extends React.Component {
     return (
       <ContactContainer>
         <ContactTitle>Contact Us</ContactTitle>
-        <form className="contact-form" onSubmit={this.handleSubmit}>
+        <form
+          className="contact-form"
+          onSubmit={this.handleSubmit}
+          data-netlify="true"
+        >
           <FormInput
             name="name"
             type="text"
@@ -56,7 +63,7 @@ class ContactPage extends React.Component {
           <FormTextArea
             name="message"
             type="textarea"
-            label="message"
+            label="Message"
             value={message}
             onChange={this.handleChange}
             required
