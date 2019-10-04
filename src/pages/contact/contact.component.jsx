@@ -41,6 +41,7 @@ class ContactPage extends React.Component {
           className="contact-form"
           onSubmit={this.handleSubmit}
           name="contact"
+          method="POST"
           data-netlify="true"
         >
           <FormInput
