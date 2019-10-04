@@ -33,7 +33,13 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <form name="contact" netlify hidden>
+    <form
+      name="contact"
+      method="POST"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      hidden
+    >
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>

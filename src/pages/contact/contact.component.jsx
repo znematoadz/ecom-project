@@ -21,6 +21,10 @@ class ContactPage extends React.Component {
     };
   }
 
+  handleSubmit = e => {
+    e.preventDefault();
+  };
+
   handleChange = e => {
     const { value, name } = e.target;
     this.setState({
@@ -36,8 +40,9 @@ class ContactPage extends React.Component {
         <form
           className="contact-form"
           onSubmit={this.handleSubmit}
-          name="contact"
           method="POST"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
         >
           <FormInput
             name="name"
