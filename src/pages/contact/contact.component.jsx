@@ -23,6 +23,11 @@ class ContactPage extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    this.setState({
+      name: "",
+      email: "",
+      message: ""
+    });
   };
 
   handleChange = e => {
